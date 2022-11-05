@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Keys to Success Miner</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <section class="row">
+      <div class="col-12 text-center">
+        <h2 class="cinzel">Keys to Success Miner</h2>
+      </div>
+    </section>
+  </header>
+
+  <main class="container-fluid bg-image">
+    <section class="row">
+      <div class="col-12 text-center mt-2">
+        <h4 class="cinzel">"We gonna win more. We gonna live more. We the best."</h4>
+      </div>
+    </section>
+    <section class="row big-space">
+      <div class="col-12 d-flex justify-content-center align-items-center">
+        <img onclick="getKeys()" class="click-img"
+          src="https://www.pngpix.com/wp-content/uploads/2021/06/PNGPIX-COM-DJ-Khaled-PNG-Transparent-Image-1.png"
+          alt="">
+      </div>
+    </section>
+
+    <section class="row justify-content-center">
+      <div class="col-2 text-center">
+        <h4 class="cinzel">Keys To Success:</h4>
+        <h4 class="card text-danger cinzel" id="keys">0</h4>
+      </div>
+
+       <div class="col-2 text-center">
+        <h4 class="cinzel">Key Multiplier:</h4>
+        <h4 class="card text-danger cinzel" id="currentMulti">1</h4>
+      </div>
+      <div class="col-2 text-center">
+        <h4 class="cinzel">Alltime Success:</h4>
+        <h4 class="card text-danger cinzel" id="total-keys">0</h4>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-3 d-flex flex-column text-center">
+        <button class="button-64" role="button-64" onclick="multiUpgrade('minor key')">Minor Key</button>
+        <div class="card card-desc">
+        <h4 class="text-center cinzel" id="minor key">0</h4>
+        <h5 class="cinzel">Minor Key: +1 Multi</h5>
+      </div>
+      </div>
+  
+      <div class="col-3 d-flex flex-column text-center">
+        <button class="button-64" role="button-64" onclick="multiUpgrade('major key')">Major Key</button>
+        <div class="card card-desc">
+        <h4 class="text-center cinzel" id="major key">0</h4>
+        <h5 class="cinzel">Major Key: +2 Multi</h5>
+      </div>
+      </div>
+      <div class="col-3 d-flex flex-column text-center">
+        <button class="button-64" role="button-64" onclick="multiUpgrade('coconut')">Fresh Coconut</button>
+        <div class="card card-desc">
+        <h4 class="text-center cinzel" id="coconut">0</h4>
+        <h5 class="cinzel">Fresh Coconut: +3 Multi</h5>
+      </div>
+      </div>
+      <div class="col-3 d-flex flex-column text-center">
+        <button class="button-64" role="button-64" onclick="timerUpgrade('bless-up')">Bless-Up</button>
+        <div class="card card-desc">
+        <h4 class="text-center cinzel" id="bless-up">0</h4>
+        <h5 class="cinzel">Bless-Up: 20 Keys Every 2 Seconds</h5>
+        <p class="cinzel">Lasts 20 Seconds</p>
+      </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
