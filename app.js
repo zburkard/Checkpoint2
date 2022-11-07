@@ -28,9 +28,10 @@ let automaticUpgrades = [
   }
 ];
 
-let keys = 0
+let keys = 5000
 let keyClick = 1
 let totalKeys = 0
+let autoUpgradeMulti = 0
 
 
 function getKeys() {
@@ -43,6 +44,7 @@ function update() {
   document.getElementById('keys').innerText = keys
   document.getElementById('currentMulti').innerText = keyClick
   document.getElementById('total-keys').innerText = totalKeys
+  document.getElementById('current-auto').innerText = autoUpgradeMulti
 };
 
 function multiUpgrade(name) {
@@ -61,14 +63,16 @@ function multiUpgrade(name) {
 function timerUpgrade(name) {
   let upgrade2 = automaticUpgrades.find(u => u.name == name)
 
+
   if (keys >= upgrade2.price) {
     let keyInterval = setInterval(() => {
       keys += upgrade2.multiplier
       totalKeys += upgrade2.multiplier
       update()
-    }, 2000)
+    }, 3000)
     keys -= upgrade2.price
     upgrade2.quantity += 1
+    autoUpgradeMulti += upgrade2.multiplier * upgrade2.quantity
     upgrade2.price += 50
     setTimeout(() => {
       clearInterval(keyInterval)

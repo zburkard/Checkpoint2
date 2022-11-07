@@ -1,7 +1,7 @@
 @keyframes rotation {
   100% {
-      -webkit-transform: rotate(360deg);
-      transform:rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -22,8 +22,9 @@
 .click-img:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.card-desc{
-  min-height: 11vh;
+
+.card-desc {
+  min-height: 23vh;
 }
 
 .cinzel {
