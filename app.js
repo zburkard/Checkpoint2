@@ -28,7 +28,7 @@ let automaticUpgrades = [
   }
 ];
 
-let keys = 5000
+let keys = 7000
 let keyClick = 1
 let totalKeys = 0
 let autoUpgradeMulti = 0
