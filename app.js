@@ -29,10 +29,9 @@ let automaticUpgrades = [
 ];
 
 let keys = 0
-let timerUpgrades = 0
-let minorKeys = 0
 let keyClick = 1
 let totalKeys = 0
+
 
 function getKeys() {
   keys += keyClick
@@ -65,6 +64,7 @@ function timerUpgrade(name) {
   if (keys >= upgrade2.price) {
     let keyInterval = setInterval(() => {
       keys += upgrade2.multiplier
+      totalKeys += upgrade2.multiplier
       update()
     }, 2000)
     keys -= upgrade2.price
